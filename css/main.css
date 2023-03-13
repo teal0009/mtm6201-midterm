@@ -1,0 +1,467 @@
+.entirebody {
+
+    margin: 0 20px 0 20px;
+}
+
+
+
+
+
+
+/*font for the whole page*/
+body {
+    font-family: "poppins", sans-serif;
+    background-color: rgb(247, 153, 99);
+
+
+}
+
+
+
+
+
+
+
+.outerheader {
+
+    border-radius: 25px;
+    min-width: 360px;
+    align-items: center;
+    text-align: center;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+
+    grid:
+        "weblogo websiteheadername"
+    ;
+
+}
+
+.weblogo {
+    max-width: 200px;
+    border: 5px solid rgba(0, 0, 0, 0.548);
+}
+
+/*site name*/
+.websiteheadername {
+    padding: 0 0 0 20px;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 40px;
+
+
+
+    animation-name: titlemoving;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+
+}
+
+/*animation to go with .websiteheadername*/
+@keyframes titlemoving {
+    
+    0% {
+        transform: translate(0,-5px);
+    }
+
+    100% {
+        transform: translate(0,5px);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for the navbar at the top*/
+
+.navlist {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    opacity: 100%;
+    list-style-type: none;
+}
+
+
+a:link {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.navchoice {
+
+
+    padding: 10px 80px 10px 80px;
+
+
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+
+
+
+
+/*for the nav background*/
+
+.blackopacity {
+
+    border-radius: 25px;
+    margin: 20px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 20px 0 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*gap after the nav bar*/
+.paddingafterheader {
+    padding: 100px 0 0 0;
+}
+
+
+
+
+
+
+/*after header body portion*/
+
+
+.pageunderheader {
+    color: white;
+}
+
+
+/*menu item*/
+.onlymenuitems {
+    align-items: center;
+}
+
+.menucard {
+
+    background-color: rgba(255, 255, 255, 0.438);
+    max-width: 300px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+/*item description*/
+.menubodytext {
+    font-size: smaller;
+}
+
+/*menu image*/
+.menuimage {
+    max-width: 100%;
+    align-items: center;
+
+}
+
+/*menu buttons*/
+.menubutton {
+
+    font-family: "poppins", sans-serif;
+    margin: 2%;
+    padding: 10px 0 10px 0;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    width: 96%;
+    border: none;
+
+    /*for the trasformation*/
+    transition: transform ease-in-out .1s;
+
+}
+
+/*for hovering on the "add to cert button"*/
+.menubutton:hover {
+
+    transform: scale(0.95);
+
+}
+
+
+
+
+
+
+/*footer*/
+
+.footoutside {
+    background-color: rgb(43, 42, 42);
+    padding: 30px;
+    margin: 100px 0 0 0;
+}
+
+.footertext {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ABOUT PAGE*/
+
+
+.aboutbody {}
+
+.aboutbackgroundcolor {
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 20px;
+}
+
+
+.abouttext {
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT PAGE*/
+
+
+
+
+
+.contactbody {
+
+}
+
+
+
+
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    background-color: #80370d;
+    padding: 20px 20px 30px 20px;
+}
+
+/*text input area*/
+input[type=text],
+select,
+textarea {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/*submit button*/
+input[type=submit] {
+    font-size: 20px;
+    background-color: #f5773d;
+    color: white;
+    margin: 20px 0 20px 30px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+/*for hovering*/
+input[type=submit]:hover {
+    background-color: #f1b79c;
+    transition: ease-in-out 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES AT THE BOTTOM*/
+
+
+@media only screen and (min-width: 1100px) {
+
+
+
+
+    /*header css*/
+    /*this css works for all pages as the header is the same in all of them*/
+    .entirebody {
+        margin: 0 250px 0 250px;
+    }
+
+    .navchoice {
+        min-width: 360px;
+
+        padding: 10px 0 10px 0px;
+
+
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+    }
+
+
+    .onlymenuitems {
+        display: grid;
+
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+
+        grid:
+            "item1 item2 item3"
+            "item4 item5 item6"
+        ;
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*just for a better margin*/
+
+@media only screen and (min-width: 1500px) {
+
+    .entirebody {
+        margin: 0 350px 0 350px;
+    }
+
+
+
+    .navchoice {
+        min-width: 360px;
+        display: inline;
+        padding: 0px 80px 0px 80px;
+
+
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*nothing*/
